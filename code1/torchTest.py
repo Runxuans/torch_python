@@ -4,8 +4,6 @@ from torch.utils.data import DataLoader
 import os
 import cv2
 
-from d1.resizescal import change
-
 
 class MyData(Dataset):
 
@@ -27,7 +25,6 @@ class MyData(Dataset):
 
 myData = MyData("D://Project//project_python//trainset_support")
 train_loader = DataLoader(myData, 4)
-
 
 writer = SummaryWriter("../writerBoard")
 step = 0
